@@ -1,0 +1,50 @@
+Steps:
+1) python 5.py >output_5.txt
+
+the output file has the  alignment sequences produced by IBM model2
+
+Observations:
+
+Alignment for the german sentence wiederaufnahme der sitzungsperiode is:
+1 3 4
+Alignment for the german sentence ich erkl&auml;re die am donnerstag , den 28. m&auml;rz 1996 unterbrochene sitzungsperiode des europ&auml;ischen parlaments f&uuml;r wiederaufgenommen . is:
+1 2 4 12 12 13 7 14 15 16 10 5 10 8 9 10 3 17
+Alignment for the german sentence begr&uuml;&szlig;ung is:
+1
+Alignment for the german sentence herzlich willkommen ! is:
+5 2 7
+Alignment for the german sentence genehmigung des protokolls is:
+1 2 1
+Alignment for the german sentence das protokoll der sitzung vom donnerstag , den 28. m&auml;rz 1996 wurde verteilt . is:
+1 2 3 5 10 7 8 4 9 10 11 14 14 15
+Alignment for the german sentence gibt es einw&auml;nde ? is:
+2 2 4 5
+Alignment for the german sentence die punkte 16 und 17 widersprechen sich jetzt , obwohl es bei der abstimmung anders aussah . is:
+10 1 2 3 4 6 6 5 10 9 12 12 10 11 12 6 14
+Alignment for the german sentence ich werde ihnen die entsprechenden anmerkungen aush&auml;ndigen , damit sie das eventuell bei der abstimmung &uuml;bernehmen k&ouml;nnen . is:
+1 2 7 10 4 9 4 10 4 11 13 4 17 19 20 4 12 21
+Alignment for the german sentence das mu&szlig; ich erst einmal kl&auml;ren , frau oomen-ruijten . is:
+7 10 1 10 5 10 8 9 10 11
+Alignment for the german sentence das kann ich so aus dem stand nicht sagen . is:
+5 2 1 4 4 4 7 2 3 8
+Alignment for the german sentence wir werden das &uuml;berpr&uuml;fen . is:
+1 2 3 5 6
+Alignment for the german sentence es geht um die erkl&auml;rung von herrn fischler zu bse , die im protokoll festgehalten wurde . is:
+4 5 5 5 7 7 12 13 15 15 14 6 17 20 17 9 21
+Alignment for the german sentence vielleicht k&ouml;nnten die kommission oder sie mir einen punkt erl&auml;utern . is:
+1 6 2 3 4 5 11 8 9 7 12
+Alignment for the german sentence offensichtlich bedeutet die erkl&auml;rung von herrn fischler vom wochenende eine &auml;nderung der haltung der kommission . is:
+3 14 9 6 6 12 13 10 10 15 16 17 19 17 14 20
+Alignment for the german sentence ich begr&uuml;&szlig;e diese &auml;nderung , denn er sagte , da&szlig; er britisches rindfleisch essen w&uuml;rde und da&szlig; das einfuhrverbot insbesondere aus wirtschaftlichen und politischen gr&uuml;nden verh&auml;ngt wurde . is:
+1 2 3 4 6 5 6 8 8 9 10 12 14 12 12 15 16 18 18 21 26 23 24 25 26 12 19 27
+Alignment for the german sentence herr pr&auml;sident , k&ouml;nnte festgestellt werden , ob er das tats&auml;chlich gesagt hat , denn das w&uuml;rde eine &auml;nderung der haltung der kommission bedeuten . is:
+12 13 4 1 2 2 11 2 5 9 7 8 6 14 15 17 2 18 19 20 2 20 2 2 22
+Alignment for the german sentence herr kollege , ich kann nicht erkennen , was das mit dem protokoll zu tun hat . is:
+1 2 3 4 5 5 2 3 7 14 12 12 14 10 11 9 15
+Alignment for the german sentence herr pr&auml;sident , zum gleichen punkt , den auch herr sturdy angesprochen hat . is:
+1 2 3 11 7 8 3 6 7 10 11 13 12 14
+Alignment for the german sentence wenn herr kommissar fischler diese erkl&auml;rung abgegeben hat , dann bedeutet dies , da&szlig; es sich nicht um eine angelegenheit der &ouml;ffentlichen gesundheit handelt . is:
+1 3 3 3 6 7 7 4 8 9 3 6 12 13 14 11 16 18 17 18 19 20 21 3 22
+
+Observations:
+  The alignments have improved in certain cases as we are not just considering the english german words with maximum likelihood, we are also considering the probable alignment from the q parameters. So the output is a combination of both. However, if a certain english and german word pair has the highest probability of occuring together but there is no corresponding alignment in q, they are not assigned to each other. 

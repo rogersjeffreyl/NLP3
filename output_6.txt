@@ -1,0 +1,21 @@
+Steps Summary:
+
+1) python 6.py
+2) python hw3/eval_scramble.py hw3/original.en  unscrambled_eng_sentences
+
+Description:
+1) python 6.py
+   Runs the script and outputs the unscrambled english translations to a file unscrambled_eng_sentences
+   
+2) python hw3/eval_scramble.py hw3/original.en  unscrambled_eng_sentences
+   Evaluates  how accurately the sentences have been unscrambled.
+  
+
+Observations:
+The accuracy after  using the scrambled file as input and  using the parameters estimted by IBM Model 2 is as follows
+
+Right	Total	Acc
+92	    100	   0.920
+
+For every german sentence we  compare all possible engish sentences, finding  the maximum log probabiity of each sentence, finding the best alignment possible for each german word in  a given german sentence.  But sometimes here  the product if q and t paramerers tend to become zero.
+
